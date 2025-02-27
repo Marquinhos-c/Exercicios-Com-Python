@@ -1,0 +1,5 @@
+n = int(input('Digite o numero que você quer a tabuada: '))
+for item in range(10):
+    multiplicador = item + 1
+    print(f'A multiplicação de {n} x {multiplicador} = {(multiplicador) * n}')
+    print('-'*30)
