@@ -1,6 +1,18 @@
-n = int(input('Quer a tabuada de qual numero? '))
-for item in range(10):
-    multiplicador = item + 1
-    print(f'A tabuada de {n} x {multiplicador} = {(multiplicador) * n}')
-    print('-'*30)
-    
+
+while True:
+    idade = int(input('Digite a idade: '))
+    if idade >= 0 and idade <= 12:
+        print('Criança!')
+        break
+    elif idade >= 13 and idade <= 17:
+        print('Adolescente!')
+        break
+    elif idade >= 18 and idade <= 59:
+        print('adulto!')
+        break
+    elif idade >= 60:
+        print('idoso!')
+        break
+    else:
+        print('idade invalida:')
+        break    
