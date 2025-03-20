@@ -1,0 +1,105 @@
+#matriz e vetor
+'''matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+#mostrando matriz
+for linha in matriz:
+    print(linha)
+print('\n')
+
+#localizando numeros da matriz
+for linha in range(3):
+    for coluna in range(3):
+        print(matriz[linha][coluna])
+print('\n')
+
+#verificando a posição do número na matriz
+print(matriz[1][2])
+print('\n')
+
+#trocando o número na posição
+for linha in matriz:
+    matriz[2][1] = 24
+    print(linha)
+print('\n')'''
+
+'''#criando lista com range
+valores = list(range(3, 10))
+print(valores)
+#ordenação de lista de ao contrario
+valores.sort(reverse=True)
+print(valores)'''
+
+'''#criando uma lista
+num = [5, 3, 6, 8]
+#adicionando numero 7 na posição 2
+num[2] = 7
+#adicionando o numero 2
+num.append(2)
+#inserindo o numero 10 na posição 0
+num.insert(0, 10)
+#romovendo numero na posição 3
+num.pop(3)
+#removendo numero 8
+num.remove(8)
+#odernando a lista
+num.sort()
+print(num)
+#lendo o comprimento da lista
+print(f'Essa lista tem {len(num)} elementos')'''
+
+#exercicio
+'''lista = []
+#adicionando numero na lista digitado pelo usuario
+for c in range(5):
+    lista.append(int(input('digite um valor:')))
+
+#copiando a lista, passando de lista para lista_1
+lista_1 = lista[:]
+lista_1.append(0)
+print(lista_1)
+print(lista)
+
+for c, v in enumerate(lista):
+    print(f'na posição {c} encontrei {v}')'''
+
+#projeto algoritmo
+
+#coluna representam dois produtos
+#linhas representam locais de compra
+tabela_p = [[12.5, 13.4], [9.67, 14.5], [11.00, 10.9], [15.00, 16.00]]
+
+for i in tabela_p:
+    print(i)
+
+soma_1 = 0
+soma_2 = 0
+minimo1 = []
+minimo2 = []
+maximo1 = []
+maximo2 = []
+
+for l in range(len(tabela_p)):
+    for c in range(2):
+        if c == 0:
+            soma_1 += tabela_p[l][c]
+            minimo1.append(tabela_p[l][c])
+            maximo1.append(tabela_p[l][c])
+        else:
+            soma_2 += tabela_p[l][c]
+            minimo2.append(tabela_p[l][c])
+            maximo2.append(tabela_p[l][c])
+
+media_1 = soma_1/len(tabela_p)
+media_2 = soma_2/len(tabela_p)
+media_total = (soma_1 + soma_2)/8
+
+print('\n')
+print(f'A média do produto 1 é: {round(media_1, 2)}')
+print(f'A média do produto 2 é: {round(media_2, 2)}')
+print(f'A média total de produtos é: {round(media_total, 2)}')
+print('\n')
+print(f'O valor minimo da coluna 1 é: {min(minimo1)}')
+print(f'O valor minimo da coluna 2 é: {min(minimo2)}')
+print('\n')
+print(f'O valor maximo da coluna 1 é: {max(maximo1)}')
+print(f'O valor maximo da coluna 2 é: {max(maximo2)}')
