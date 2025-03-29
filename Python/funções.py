@@ -1,4 +1,3 @@
-
 #criando uma função
 def boas_vindas(nome):
     print(f'Olá, Seja bem vindo(a) {nome}! \n')
@@ -19,6 +18,28 @@ x3 = soma_dois_valores(x1, x2) # passando como paramentro n1 -> x1 e n2 -> x2
 print(x3)
 
 
+
+''' #lista de produtos, vamos padronizar.
+produtos = ['ABC12', 'abd012', ' ABS111', 'abB222']
+texto = 'abd012'
+texto = texto.upper() # colocando texte em maiusculo
+texto = texto.strip() # retirando os espaços que tem no testo
+print(texto) '''
+
+#criando uma função para padronizar o testo da lisra
+produtos = ['ABC12', 'abd012', ' ABS111', 'abB222']
+def padronizar_texto(texto):
+    texto = texto.upper() 
+    texto = texto.strip() 
+    return texto
+
+for i, produto in enumerate(produtos):#acessando cada produto de produtos
+    produtos[i] = padronizar_texto(produto)# chamando função para posição
+
+print(produtos)
+
+
+
 #Distância entre dois pontos
 import math
 def calcular_distancia_entre_pontos(x1, y1, x2, y2): 
@@ -31,6 +52,8 @@ x2 = 9.9
 y2 = 10
 distancia = calcular_distancia_entre_pontos(x1, y1, x2, y2)
 print(f'A distância entre os dois pontos é {distancia}:')
+
+
 
 # Funções dentro de funções
 #função para calcular quadrilatero
@@ -58,4 +81,4 @@ figura_geometrica = str(input('Qual figura geometrica você quer a area? '))
 base = float(input('Qual é a base? '))
 altura = float(input('Qual é a altura? '))
 Ar = calcular_area(figura_geometrica, base, altura) #chamando a função escolha
-print(f'A area de {figura_geometrica} é igual a {Ar}')
+print(f'A area de {figura_geometrica} é igual a {Ar}')  
