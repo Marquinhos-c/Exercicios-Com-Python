@@ -1,4 +1,4 @@
-'''#exercicio 1
+#exercicio 1
 def soma_par_impar(n):
     soma_par = 0
     soma_impar = 0
@@ -12,7 +12,8 @@ def soma_par_impar(n):
 n = int(input('Escolha um número: '))
 soma = soma_par_impar(n)
 print('\n')
-print(f'A soma de pares e soma impares {soma}...')'''
+print(f'A soma de pares e soma impares {soma}...')
+
 
 #exercicio 2
 def verificar_numero_primo(numero):
