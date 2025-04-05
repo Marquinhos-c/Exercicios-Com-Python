@@ -18,8 +18,8 @@ x3 = soma_dois_valores(x1, x2) # passando como paramentro n1 -> x1 e n2 -> x2
 print(x3)
 
 
-
-''' #lista de produtos, vamos padronizar.
+'''
+#lista de produtos, vamos padronizar.
 produtos = ['ABC12', 'abd012', ' ABS111', 'abB222']
 texto = 'abd012'
 texto = texto.upper() # colocando texte em maiusculo
@@ -81,4 +81,4 @@ figura_geometrica = str(input('Qual figura geometrica você quer a area? '))
 base = float(input('Qual é a base? '))
 altura = float(input('Qual é a altura? '))
 Ar = calcular_area(figura_geometrica, base, altura) #chamando a função escolha
-print(f'A area de {figura_geometrica} é igual a {Ar}')  
+print(f'A area de {figura_geometrica} é igual a {Ar}') 
